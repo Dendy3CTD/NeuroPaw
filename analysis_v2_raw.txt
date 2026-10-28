@@ -1,0 +1,123 @@
+=== SCENE 'Scene' units=METRIC scale_length=1.0 length_unit=METERS engine=BLENDER_EEVEE
+objects=78 meshes=60 materials=10 armatures=0
+collections: [('Axes', 24), ('Body', 2), ('Electronics', 6), ('Labels', 18), ('Legs', 28)]
+
+=== OBJECTS (мм; rot в градусах)
+ax_FL_hip_rod          col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(105.0, 108.7, 160.0) rot=[0.0, 90.0, 90.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[158.5,161.5]
+ax_FL_hip_tip          col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(105.0, 126.2, 160.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[156.0,164.0]
+ax_FL_kn_rod           col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(168.1, 108.7, 69.9) rot=[0.0, 90.0, 90.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[68.4,71.4]
+ax_FL_kn_tip           col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(168.1, 126.2, 69.9) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[65.9,73.9]
+ax_FL_sh_rod           col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(122.5, 55.0, 190.0) rot=[0.0, 90.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[188.5,191.5]
+ax_FL_sh_tip           col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(140.0, 55.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[186.0,194.0]
+ax_FR_hip_rod          col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(105.0, -108.7, 160.0) rot=[0.0, 90.0, -90.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[158.5,161.5]
+ax_FR_hip_tip          col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(105.0, -126.2, 160.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[156.0,164.0]
+ax_FR_kn_rod           col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(168.1, -108.7, 69.9) rot=[0.0, 90.0, -90.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[68.4,71.4]
+ax_FR_kn_tip           col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(168.1, -126.2, 69.9) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[65.9,73.9]
+ax_FR_sh_rod           col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(122.5, -55.0, 190.0) rot=[0.0, 90.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[188.5,191.5]
+ax_FR_sh_tip           col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(140.0, -55.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[186.0,194.0]
+ax_RL_hip_rod          col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(-105.0, 108.7, 160.0) rot=[0.0, 90.0, 90.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[158.5,161.5]
+ax_RL_hip_tip          col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(-105.0, 126.2, 160.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[156.0,164.0]
+ax_RL_kn_rod           col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(-168.1, 108.7, 69.9) rot=[0.0, 90.0, 90.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[68.4,71.4]
+ax_RL_kn_tip           col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(-168.1, 126.2, 69.9) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[65.9,73.9]
+ax_RL_sh_rod           col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(-87.5, 55.0, 190.0) rot=[0.0, 90.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[188.5,191.5]
+ax_RL_sh_tip           col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(-70.0, 55.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[186.0,194.0]
+ax_RR_hip_rod          col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(-105.0, -108.7, 160.0) rot=[0.0, 90.0, -90.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[158.5,161.5]
+ax_RR_hip_tip          col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(-105.0, -126.2, 160.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[156.0,164.0]
+ax_RR_kn_rod           col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(-168.1, -108.7, 69.9) rot=[0.0, 90.0, -90.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[68.4,71.4]
+ax_RR_kn_tip           col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(-168.1, -126.2, 69.9) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[65.9,73.9]
+ax_RR_sh_rod           col=Axes         type=MESH    dims=(3.0, 3.0, 35.0) loc=(-87.5, -55.0, 190.0) rot=[0.0, 90.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['mat_axis'] mods=[] wbbox_z=[188.5,191.5]
+ax_RR_sh_tip           col=Axes         type=MESH    dims=(8.0, 8.0, 8.0) loc=(-70.0, -55.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=33 mats=['mat_axis'] mods=[] wbbox_z=[186.0,194.0]
+Body_main              col=Body         type=MESH    dims=(260.0, 110.0, 60.0) loc=(0.0, 0.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(0.26, 0.11, 0.06) parent=None polys=6 mats=['PETG'] mods=[] wbbox_z=[160.0,220.0]
+Floor                  col=Body         type=MESH    dims=(800.0, 800.0, 0.0) loc=(0.0, 0.0, 0.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=1 mats=['Floor'] mods=[] wbbox_z=[0.0,0.0]
+Battery_2S             col=Electronics  type=MESH    dims=(140.0, 45.0, 25.0) loc=(0.0, 0.0, 172.5) rot=[0.0, 0.0, 0.0] scale=(0.14, 0.045, 0.025) parent=None polys=6 mats=['Battery'] mods=[] wbbox_z=[160.0,185.0]
+ESP32-S3               col=Electronics  type=MESH    dims=(56.0, 28.0, 10.0) loc=(-50.0, 0.0, 213.0) rot=[0.0, 0.0, 0.0] scale=(0.056, 0.028, 0.01) parent=None polys=6 mats=['Elec'] mods=[] wbbox_z=[208.0,218.0]
+IMU                    col=Electronics  type=MESH    dims=(20.0, 20.0, 5.0) loc=(60.0, 0.0, 215.5) rot=[0.0, 0.0, 0.0] scale=(0.02, 0.02, 0.005) parent=None polys=6 mats=['Elec'] mods=[] wbbox_z=[213.0,218.0]
+PCA9685                col=Electronics  type=MESH    dims=(60.0, 25.0, 5.0) loc=(-10.0, 0.0, 215.5) rot=[0.0, 0.0, 0.0] scale=(0.06, 0.025, 0.005) parent=None polys=6 mats=['Elec'] mods=[] wbbox_z=[213.0,218.0]
+UBEC                   col=Electronics  type=MESH    dims=(50.0, 30.0, 15.0) loc=(25.0, 0.0, 210.5) rot=[0.0, 0.0, 0.0] scale=(0.05, 0.03, 0.015) parent=None polys=6 mats=['Elec'] mods=[] wbbox_z=[203.0,218.0]
+VL53L5CX               col=Electronics  type=MESH    dims=(10.0, 10.0, 3.0) loc=(135.0, 0.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(0.01, 0.01, 0.003) parent=None polys=6 mats=['Sensor'] mods=[] wbbox_z=[188.5,191.5]
+dim_BH                 col=Labels       type=FONT    dims=(28.5, 4.1, 0.0) loc=(135.0, 70.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[190.0,190.0]
+    text='Body H=60 mm'
+dim_BL                 col=Labels       type=FONT    dims=(29.7, 4.1, 0.0) loc=(-130.0, -80.0, 225.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[225.0,225.0]
+    text='Body L=260 mm'
+dim_BW                 col=Labels       type=FONT    dims=(32.2, 4.1, 0.0) loc=(135.0, 0.0, 225.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[225.0,225.0]
+    text='Body W=110 mm'
+dim_LL                 col=Labels       type=FONT    dims=(24.7, 3.2, 0.0) loc=(165.0, 55.0, -10.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[-10.0,-10.0]
+    text='Shin=120 mm'
+dim_ST                 col=Labels       type=FONT    dims=(30.1, 3.2, 0.0) loc=(0.0, -95.0, 110.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[110.0,110.0]
+    text='Back H=220 mm'
+dim_UL                 col=Labels       type=FONT    dims=(27.4, 4.1, 0.0) loc=(165.0, 55.0, 105.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[105.0,105.0]
+    text='Thigh=110 mm'
+lbl_FL_hip             col=Labels       type=FONT    dims=(10.3, 3.6, 0.0) loc=(100.0, 116.5, 181.4) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[181.4,181.4]
+    text='FL_hip'
+lbl_FL_kn              col=Labels       type=FONT    dims=(13.1, 3.2, 0.0) loc=(163.1, 116.5, 91.3) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[91.3,91.3]
+    text='FL_knee'
+lbl_FL_sh              col=Labels       type=FONT    dims=(19.7, 3.2, 0.0) loc=(100.0, 80.3, 211.4) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[211.4,211.4]
+    text='FL_shoulder'
+lbl_FR_hip             col=Labels       type=FONT    dims=(10.7, 3.6, 0.0) loc=(100.0, -116.5, 181.4) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[181.4,181.4]
+    text='FR_hip'
+lbl_FR_kn              col=Labels       type=FONT    dims=(13.6, 3.2, 0.0) loc=(163.1, -116.5, 91.3) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[91.3,91.3]
+    text='FR_knee'
+lbl_FR_sh              col=Labels       type=FONT    dims=(20.2, 3.2, 0.0) loc=(100.0, -80.3, 211.4) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[211.4,211.4]
+    text='FR_shoulder'
+lbl_RL_hip             col=Labels       type=FONT    dims=(10.8, 3.6, 0.0) loc=(-110.0, 116.5, 181.4) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[181.4,181.4]
+    text='RL_hip'
+lbl_RL_kn              col=Labels       type=FONT    dims=(13.7, 3.2, 0.0) loc=(-173.1, 116.5, 91.3) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[91.3,91.3]
+    text='RL_knee'
+lbl_RL_sh              col=Labels       type=FONT    dims=(20.2, 3.2, 0.0) loc=(-110.0, 80.3, 211.4) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[211.4,211.4]
+    text='RL_shoulder'
+lbl_RR_hip             col=Labels       type=FONT    dims=(11.3, 3.6, 0.0) loc=(-110.0, -116.5, 181.4) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[181.4,181.4]
+    text='RR_hip'
+lbl_RR_kn              col=Labels       type=FONT    dims=(14.1, 3.2, 0.0) loc=(-173.1, -116.5, 91.3) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[91.3,91.3]
+    text='RR_knee'
+lbl_RR_sh              col=Labels       type=FONT    dims=(20.7, 3.2, 0.0) loc=(-110.0, -80.3, 211.4) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=- mats=['mat_label'] mods=[] wbbox_z=[211.4,211.4]
+    text='RR_shoulder'
+FL_bracket             col=Legs         type=MESH    dims=(13.0, 36.2, 8.0) loc=(105.0, 73.1, 175.0) rot=[0.0, 0.0, 0.0] scale=(0.013, 0.0362, 0.008) parent=None polys=6 mats=['PETG'] mods=[] wbbox_z=[171.0,179.0]
+FL_foot                col=Legs         type=MESH    dims=(20.0, 20.0, 20.0) loc=(64.1, 91.2, 10.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=384 mats=['TPU'] mods=[] wbbox_z=[0.0,20.0]
+FL_hip_servo           col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(105.0, 91.2, 160.0) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[138.5,181.4]
+FL_kn_servo            col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(168.1, 91.2, 69.9) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[48.4,91.3]
+FL_sh_servo            col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(105.0, 55.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[168.5,211.4]
+FL_shin                col=Legs         type=MESH    dims=(14.0, 14.0, 120.0) loc=(116.1, 91.2, 39.9) rot=[0.0, 119.9, 180.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['PETG'] mods=[] wbbox_z=[3.9,76.0]
+FL_thigh               col=Legs         type=MESH    dims=(14.0, 14.0, 110.0) loc=(136.5, 91.2, 114.9) rot=[0.0, 145.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['PETG'] mods=[] wbbox_z=[65.9,164.0]
+FR_bracket             col=Legs         type=MESH    dims=(13.0, 36.2, 8.0) loc=(105.0, -73.1, 175.0) rot=[0.0, 0.0, 0.0] scale=(0.013, 0.0362, 0.008) parent=None polys=6 mats=['PETG'] mods=[] wbbox_z=[171.0,179.0]
+FR_foot                col=Legs         type=MESH    dims=(20.0, 20.0, 20.0) loc=(64.1, -91.2, 10.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=384 mats=['TPU'] mods=[] wbbox_z=[0.0,20.0]
+FR_hip_servo           col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(105.0, -91.2, 160.0) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[138.5,181.4]
+FR_kn_servo            col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(168.1, -91.2, 69.9) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[48.4,91.3]
+FR_sh_servo            col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(105.0, -55.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[168.5,211.4]
+FR_shin                col=Legs         type=MESH    dims=(14.0, 14.0, 120.0) loc=(116.1, -91.2, 39.9) rot=[0.0, 119.9, 180.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['PETG'] mods=[] wbbox_z=[3.9,76.0]
+FR_thigh               col=Legs         type=MESH    dims=(14.0, 14.0, 110.0) loc=(136.5, -91.2, 114.9) rot=[0.0, 145.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['PETG'] mods=[] wbbox_z=[65.9,164.0]
+RL_bracket             col=Legs         type=MESH    dims=(13.0, 36.2, 8.0) loc=(-105.0, 73.1, 175.0) rot=[0.0, 0.0, 0.0] scale=(0.013, 0.0362, 0.008) parent=None polys=6 mats=['PETG'] mods=[] wbbox_z=[171.0,179.0]
+RL_foot                col=Legs         type=MESH    dims=(20.0, 20.0, 20.0) loc=(-64.1, 91.2, 10.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=384 mats=['TPU'] mods=[] wbbox_z=[0.0,20.0]
+RL_hip_servo           col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(-105.0, 91.2, 160.0) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[138.5,181.4]
+RL_kn_servo            col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(-168.1, 91.2, 69.9) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[48.4,91.3]
+RL_sh_servo            col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(-105.0, 55.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[168.5,211.4]
+RL_shin                col=Legs         type=MESH    dims=(14.0, 14.0, 120.0) loc=(-116.1, 91.2, 39.9) rot=[0.0, 119.9, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['PETG'] mods=[] wbbox_z=[3.9,76.0]
+RL_thigh               col=Legs         type=MESH    dims=(14.0, 14.0, 110.0) loc=(-136.5, 91.2, 114.9) rot=[0.0, 145.0, 180.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['PETG'] mods=[] wbbox_z=[65.9,164.0]
+RR_bracket             col=Legs         type=MESH    dims=(13.0, 36.2, 8.0) loc=(-105.0, -73.1, 175.0) rot=[0.0, 0.0, 0.0] scale=(0.013, 0.0362, 0.008) parent=None polys=6 mats=['PETG'] mods=[] wbbox_z=[171.0,179.0]
+RR_foot                col=Legs         type=MESH    dims=(20.0, 20.0, 20.0) loc=(-64.1, -91.2, 10.0) rot=[0.0, 0.0, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=384 mats=['TPU'] mods=[] wbbox_z=[0.0,20.0]
+RR_hip_servo           col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(-105.0, -91.2, 160.0) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[138.5,181.4]
+RR_kn_servo            col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(-168.1, -91.2, 69.9) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[48.4,91.3]
+RR_sh_servo            col=Legs         type=MESH    dims=(19.7, 40.7, 42.9) loc=(-105.0, -55.0, 190.0) rot=[0.0, 0.0, 0.0] scale=(0.0197, 0.0407, 0.0429) parent=None polys=6 mats=['Servo'] mods=[] wbbox_z=[168.5,211.4]
+RR_shin                col=Legs         type=MESH    dims=(14.0, 14.0, 120.0) loc=(-116.1, -91.2, 39.9) rot=[0.0, 119.9, 0.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['PETG'] mods=[] wbbox_z=[3.9,76.0]
+RR_thigh               col=Legs         type=MESH    dims=(14.0, 14.0, 110.0) loc=(-136.5, -91.2, 114.9) rot=[0.0, 145.0, 180.0] scale=(1.0, 1.0, 1.0) parent=None polys=18 mats=['PETG'] mods=[] wbbox_z=[65.9,164.0]
+
+=== ELECTRONICS
+Battery_2S   size=(140.0, 45.0, 25.0) min=(-70.0, -22.5, 160.0) max=(70.0, 22.5, 185.0)
+ESP32-S3     size=(56.0, 28.0, 10.0) min=(-78.0, -14.0, 208.0) max=(-22.0, 14.0, 218.0)
+PCA9685      size=(60.0, 25.0, 5.0) min=(-40.0, -12.5, 213.0) max=(20.0, 12.5, 218.0)
+UBEC         size=(50.0, 30.0, 15.0) min=(0.0, -15.0, 203.0) max=(50.0, 15.0, 218.0)
+IMU          size=(20.0, 20.0, 5.0) min=(50.0, -10.0, 213.0) max=(70.0, 10.0, 218.0)
+VL53L5CX     size=(10.0, 10.0, 3.0) min=(130.0, -5.0, 188.5) max=(140.0, 5.0, 191.5)
+
+=== LEG JOINT CONNECTIVITY (зазоры между соседними звеньями)
+FL: sh_servo→bracket=0.0  bracket→hip_servo=0.0  hip_servo→thigh=0.0  thigh→kn_servo=0.0  kn_servo→shin=0.0  shin→foot=0.0  foot_min_z=0.0mm
+FR: sh_servo→bracket=0.0  bracket→hip_servo=0.0  hip_servo→thigh=0.0  thigh→kn_servo=0.0  kn_servo→shin=0.0  shin→foot=0.0  foot_min_z=0.0mm
+RL: sh_servo→bracket=0.0  bracket→hip_servo=0.0  hip_servo→thigh=0.0  thigh→kn_servo=0.0  kn_servo→shin=0.0  shin→foot=0.0  foot_min_z=0.0mm
+RR: sh_servo→bracket=0.0  bracket→hip_servo=0.0  hip_servo→thigh=0.0  thigh→kn_servo=0.0  kn_servo→shin=0.0  shin→foot=0.0  foot_min_z=0.0mm
+
+=== BODY vs SERVOS (AABB overlap)
+  FL_sh_servo пересекается с корпусом
+  FR_sh_servo пересекается с корпусом
+  RL_sh_servo пересекается с корпусом
+  RR_sh_servo пересекается с корпусом
+
+=== DONE

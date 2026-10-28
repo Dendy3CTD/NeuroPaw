@@ -1,0 +1,105 @@
+{
+ "stand": {
+  "hits": 0,
+  "tilt_deg": -0.0,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 776.74636474115,
+  "belly_mm": 150.0367522239685,
+  "hip_front_mm": 175.03675818443298,
+  "hip_rear_mm": 175.03675818443298
+ },
+ "stand_head_L90": {
+  "hits": 0,
+  "tilt_deg": -0.0,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 776.74636474115,
+  "belly_mm": 150.0367522239685,
+  "hip_front_mm": 175.03675818443298,
+  "hip_rear_mm": 175.03675818443298
+ },
+ "stand_head_R90": {
+  "hits": 0,
+  "tilt_deg": -0.0,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 776.74636474115,
+  "belly_mm": 150.0367522239685,
+  "hip_front_mm": 175.03675818443298,
+  "hip_rear_mm": 175.03675818443298
+ },
+ "standup_mid": {
+  "hits": 0,
+  "tilt_deg": -0.0,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 604.2655638315781,
+  "belly_mm": 105.39543628692627,
+  "hip_front_mm": 130.39544224739075,
+  "hip_rear_mm": 130.39544224739075
+ },
+ "sit": {
+  "hits": 0,
+  "tilt_deg": 38.00295317056596,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 1000000000.0,
+  "belly_mm": 71.60118967294693,
+  "hip_front_mm": 242.14768409729004,
+  "hip_rear_mm": 106.69320821762085,
+  "front_hip_deg": 60,
+  "spine_deg": 20.0
+ },
+ "sit_head_R90": {
+  "hits": 0,
+  "tilt_deg": 38.00295317056596,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 1000000000.0,
+  "belly_mm": 71.60118967294693,
+  "hip_front_mm": 242.14768409729004,
+  "hip_rear_mm": 106.69320821762085
+ },
+ "lie": {
+  "hits": 0,
+  "tilt_deg": -0.0,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 504.4500989461025,
+  "belly_mm": 79.56129312515259,
+  "hip_front_mm": 104.56129908561707,
+  "hip_rear_mm": 104.56129908561707
+ },
+ "lie_head_L90": {
+  "hits": 0,
+  "tilt_deg": -0.0,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 504.4500989461025,
+  "belly_mm": 79.56129312515259,
+  "hip_front_mm": 104.56129908561707,
+  "hip_rear_mm": 104.56129908561707
+ },
+ "stand_tall": {
+  "hits": 0,
+  "tilt_deg": -0.0,
+  "sonar_self_mm": null,
+  "sonar_self_obj": null,
+  "sonar_floor_mm": 886.9557762853149,
+  "belly_mm": 178.5610467195511,
+  "hip_front_mm": 203.56105268001556,
+  "hip_rear_mm": 203.56105268001556
+ },
+ "knee_stop": {
+  "65": [],
+  "128.0": [],
+  "128.3": [],
+  "129.3": [
+   "FL_shin × FL_thigh"
+  ],
+  "130.0": [
+   "FL_shin × FL_thigh"
+  ]
+ }
+}

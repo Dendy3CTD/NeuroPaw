@@ -1,0 +1,933 @@
+{
+  "version": "v6",
+  "units": "mm, g, kg·cm @6 V",
+  "body": {
+    "layout": "передняя и задняя секции + узел позвоночника (14 pitch DS3235MG, 13 yaw MG996R) в зазоре",
+    "section_length": 120,
+    "spine_gap": 30,
+    "total_length": 270,
+    "width": 120,
+    "height": 70,
+    "bottom_z": 150,
+    "wall": 3.0,
+    "spine_pitch_axis": {
+      "x": -29,
+      "z": 191
+    },
+    "spine_yaw_axis": {
+      "x": 24,
+      "y": 0
+    }
+  },
+  "stance": {
+    "back_height_from_floor": 220,
+    "hip_axis_z": 175
+  },
+  "shoulder_spacing": {
+    "along_body": 220,
+    "across_body": 90,
+    "_comment": "across_body — расстояние между осями отведения (±45 мм)"
+  },
+  "leg": {
+    "upper_length": 110,
+    "lower_length": 120,
+    "foot_diameter": 20,
+    "foot_material": "TPU 95A",
+    "foot_y": 89.45
+  },
+  "servos": {
+    "MG996R": {
+      "size": [
+        40.7,
+        19.7,
+        42.9
+      ],
+      "mass_g": 55,
+      "torque_kgcm": 11.0,
+      "stall_a": 2.5,
+      "speed_s60": 0.14,
+      "shaft_offset": 10.0,
+      "spline": "25T",
+      "deadband_us": 5,
+      "backlash_deg": 1.0
+    },
+    "DS3235MG": {
+      "size": [
+        40.0,
+        20.0,
+        40.5
+      ],
+      "mass_g": 66,
+      "torque_kgcm": 32.0,
+      "stall_a": 3.0,
+      "speed_s60": 0.13,
+      "shaft_offset": 10.0,
+      "spline": "25T",
+      "deadband_us": 3,
+      "backlash_deg": 0.5,
+      "_comment": "момент и ток при 6 В — оценка по данным продавца (35 кг·см / 6.8 В), проверить на стенде"
+    },
+    "MG90S": {
+      "size": [
+        22.8,
+        12.2,
+        28.5
+      ],
+      "mass_g": 13.4,
+      "torque_kgcm": 2.2,
+      "stall_a": 0.7,
+      "speed_s60": 0.08,
+      "shaft_offset": 5.9,
+      "spline": "20T",
+      "deadband_us": 5,
+      "backlash_deg": 1.5
+    },
+    "SG90": {
+      "size": [
+        22.2,
+        11.8,
+        31.0
+      ],
+      "mass_g": 9,
+      "torque_kgcm": 1.8,
+      "stall_a": 0.65,
+      "speed_s60": 0.1,
+      "shaft_offset": 5.9,
+      "spline": "21T",
+      "deadband_us": 10,
+      "backlash_deg": 2.0
+    }
+  },
+  "bearings": {
+    "625ZZ": {
+      "d": 5,
+      "D": 16,
+      "B": 5,
+      "mass_g": 4.6,
+      "seat_d": 16.2,
+      "qty_model": 22,
+      "qty_need": 24,
+      "use": "отведение 4 (мосты груди и кормы), бедро 4, колено 8, позвоночник 2 + 2 (пары), наклон шеи 2 (пара); оси — болты M5 с гайкой и фиксатором резьбы"
+    },
+    "MR683ZZ": {
+      "d": 3,
+      "D": 7,
+      "B": 3,
+      "mass_g": 0.5,
+      "seat_d": 7.2,
+      "qty_model": 2,
+      "qty_need": 2,
+      "use": "ось челюсти, ответная сторона (пара в правой щеке), ось — винт M3"
+    },
+    "51100": {
+      "d": 10,
+      "D": 24,
+      "B": 9,
+      "mass_g": 16,
+      "qty_model": 1,
+      "qty_need": 1,
+      "use": "поворот шеи: держит вес головы, MG90S только вращает"
+    }
+  },
+  "print": {
+    "material": "PETG",
+    "density_g_cm3": 1.27,
+    "infill": 0.2,
+    "wall_min": 2.4,
+    "wall_loaded": 3.2,
+    "clearance_servo": 0.3,
+    "clearance_bearing": 0.2,
+    "insert_m3": {
+      "hole_d": 4.0,
+      "depth": 5.7
+    },
+    "insert_m2_5": {
+      "hole_d": 3.5,
+      "depth": 4.0
+    },
+    "fillet_min": 1.5,
+    "perimeter_mm": 1.2
+  },
+  "electronics": {
+    "ESP32_Body": {
+      "board": "ESP32 DevKit CH340 (ESP32-WROOM-32), 38 выводов",
+      "size": [
+        55,
+        28,
+        13
+      ],
+      "mass_g": 9.5,
+      "section": "rear",
+      "estimate_row": 5,
+      "i5_peak_a": 0.25,
+      "i5_avg_a": 0.08,
+      "measure": true,
+      "purchased": true,
+      "note": "30-выводная 51×28 тоже встаёт в то же место"
+    },
+    "ESP32_Senses": {
+      "board": "ESP32-S3-DevKitC-1 N16R8",
+      "size": [
+        69,
+        26,
+        13
+      ],
+      "mass_g": 10,
+      "section": "head",
+      "estimate_row": 6,
+      "i5_peak_a": 0.3,
+      "i5_avg_a": 0.12,
+      "measure": true,
+      "purchased": true,
+      "note": "длина 63–69 по продавцу, в модели 69"
+    },
+    "ESP32_Brain": {
+      "board": "ESP32-S3-CAM N16R8 + камера OV2640",
+      "size": [
+        64,
+        27,
+        7
+      ],
+      "mass_g": 11,
+      "section": "head",
+      "estimate_row": 7,
+      "i5_peak_a": 0.45,
+      "i5_avg_a": 0.3,
+      "measure": true,
+      "purchased": true,
+      "note": "типовая плата с двумя USB-C (USB/OTG и COM); гребёнки не паять"
+    },
+    "ESP32_Comms": {
+      "board": "ESP32-C3 SuperMini",
+      "size": [
+        22.5,
+        18,
+        4.8
+      ],
+      "mass_g": 2,
+      "section": "front",
+      "estimate_row": 8,
+      "i5_peak_a": 0.35,
+      "i5_avg_a": 0.1,
+      "measure": true,
+      "purchased": true
+    },
+    "CAN_transceiver": {
+      "board": "SN65HVD230, набор 4 шт.",
+      "size": [
+        20,
+        15,
+        3.4
+      ],
+      "mass_g": 2,
+      "section": "all",
+      "estimate_row": 9,
+      "i5_peak_a": 0.01,
+      "i5_avg_a": 0.01,
+      "measure": true,
+      "purchased": true,
+      "note": "масса на модуль; 120 Ом снять на «Мозге» и «Связи»"
+    },
+    "PCA9685_Body": {
+      "board": "PCA9685 16 кан., 0x40 (+ тестер серв)",
+      "size": [
+        62.5,
+        25.4,
+        10
+      ],
+      "mass_g": 9,
+      "section": "rear",
+      "estimate_row": 10,
+      "i5_peak_a": 0.01,
+      "i5_avg_a": 0.01,
+      "measure": false,
+      "purchased": true
+    },
+    "IMU_front": {
+      "board": "GY-521 MPU-6050, 0x69 (AD0 = 1)",
+      "size": [
+        21.2,
+        16.4,
+        3.2
+      ],
+      "mass_g": 3,
+      "section": "front",
+      "estimate_row": 11,
+      "i5_peak_a": 0.005,
+      "i5_avg_a": 0.005,
+      "measure": true,
+      "purchased": true
+    },
+    "IMU_rear": {
+      "board": "MPU-6050 (имеется; принят GY-521), 0x68",
+      "size": [
+        21.2,
+        16.4,
+        3.2
+      ],
+      "mass_g": 3,
+      "section": "rear",
+      "estimate_row": 12,
+      "i5_peak_a": 0.005,
+      "i5_avg_a": 0.005,
+      "measure": true,
+      "purchased": true,
+      "note": "уточнить модель имеющегося модуля"
+    },
+    "Sonar_HCSR04": {
+      "board": "HC-SR04 (имеется)",
+      "size": [
+        45,
+        20,
+        15
+      ],
+      "mass_g": 9,
+      "section": "front",
+      "estimate_row": 13,
+      "i5_peak_a": 0.015,
+      "i5_avg_a": 0.015,
+      "measure": true,
+      "purchased": true,
+      "note": "Echo 5 В → делитель 1 кОм / 2 кОм → 3.3 В"
+    },
+    "INA226_jaw": {
+      "board": "INA226 (шунт 0.1 Ом, до 0.82 А), 0x40 на шине «Органов чувств»",
+      "size": [
+        20,
+        25,
+        3
+      ],
+      "mass_g": 2,
+      "section": "head",
+      "estimate_row": 14,
+      "i5_peak_a": 0.001,
+      "i5_avg_a": 0.001,
+      "measure": true,
+      "purchased": true
+    },
+    "Mics_INMP441": {
+      "board": "INMP441, набор 2 шт.",
+      "size": [
+        14,
+        14,
+        3
+      ],
+      "mass_g": 1.5,
+      "section": "head",
+      "estimate_row": 15,
+      "i5_peak_a": 0.002,
+      "i5_avg_a": 0.002,
+      "measure": true,
+      "purchased": true,
+      "note": "масса на модуль"
+    },
+    "Eyes_GC9A01": {
+      "board": "GC9A01 1.28\" 240×240 SPI",
+      "size": [
+        38.6,
+        38.6,
+        4.5
+      ],
+      "mass_g": 6,
+      "section": "head",
+      "estimate_row": 16,
+      "i5_peak_a": 0.06,
+      "i5_avg_a": 0.04,
+      "measure": true,
+      "purchased": true,
+      "note": "на экран; подсветка ≤ 50 %"
+    },
+    "Amp_MAX98357A": {
+      "board": "MAX98357A I2S 3 Вт",
+      "size": [
+        18,
+        19,
+        3
+      ],
+      "mass_g": 2,
+      "section": "head",
+      "estimate_row": 17,
+      "i5_peak_a": 0.7,
+      "i5_avg_a": 0.05,
+      "measure": true,
+      "purchased": true,
+      "note": "клеммник не впаивать — провода динамика пайкой"
+    },
+    "Speaker": {
+      "board": "динамик 35×25 мм 4 Ом 3 Вт (1 из набора 2 шт.)",
+      "size": [
+        35,
+        25,
+        5
+      ],
+      "mass_g": 7,
+      "section": "head",
+      "estimate_row": 18,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": true,
+      "purchased": true
+    },
+    "USB_flash": {
+      "board": "флешка 50 ГБ USB-A (имеется)",
+      "size": [
+        45,
+        16,
+        8
+      ],
+      "mass_g": 6,
+      "section": "head",
+      "estimate_row": 19,
+      "i5_peak_a": 0.1,
+      "i5_avg_a": 0.03,
+      "measure": true,
+      "purchased": true,
+      "note": "длина принята 45 мм с разъёмом"
+    },
+    "OTG_adapter": {
+      "board": "OTG-переходник USB-C → USB-A (жёсткий)",
+      "size": [
+        24,
+        16,
+        8
+      ],
+      "mass_g": 4,
+      "section": "spare",
+      "estimate_row": 20,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": true,
+      "purchased": true,
+      "note": "в голове не помещается по длине — для отладки на столе"
+    },
+    "OTG_cable": {
+      "board": "OTG-кабель USB-C 90° → USB-A гнездо, 10 см",
+      "size": [
+        22,
+        15,
+        8
+      ],
+      "mass_g": 8,
+      "section": "head",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": true,
+      "purchased": false,
+      "note": "нет в смете — нужен вместо жёсткого"
+    },
+    "Battery_2S2P": {
+      "board": "Molicel P28A × 4 (2S2P 5600 мА·ч)",
+      "size": [
+        76,
+        67,
+        20
+      ],
+      "mass_g": 190,
+      "section": "rear",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "BMS": {
+      "board": "BMS 2S 40 А",
+      "size": [
+        45,
+        20,
+        4
+      ],
+      "mass_g": 15,
+      "section": "rear",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "UBEC_F": {
+      "board": "UBEC 6 В 20 А «П»: передние ноги, шея, челюсть, уши",
+      "size": [
+        46,
+        27,
+        13
+      ],
+      "mass_g": 30,
+      "section": "front",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "UBEC_R": {
+      "board": "UBEC 6 В 20 А «З»: задние ноги, позвоночник, хвост",
+      "size": [
+        46,
+        27,
+        13
+      ],
+      "mass_g": 30,
+      "section": "rear",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "DCDC_5V_5A": {
+      "board": "DC-DC 7.4 → 5 В 5 А (Mini560 Pro)",
+      "size": [
+        21,
+        16,
+        5
+      ],
+      "mass_g": 4,
+      "section": "front",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "Fuses": {
+      "board": "40 А главный, 25 А × 2 (UBEC), 5 А (логика), держатели mini-blade",
+      "size": [
+        25,
+        10,
+        15
+      ],
+      "mass_g": 3,
+      "section": "all",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "MOSFET_switches": {
+      "board": "P-MOSFET ключи веток (мягкий старт)",
+      "size": [
+        25,
+        20,
+        5
+      ],
+      "mass_g": 3,
+      "section": "all",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "Capacitors": {
+      "board": "2200 мкФ 10 В Low-ESR × 3",
+      "size": [
+        12.5,
+        12.5,
+        20
+      ],
+      "mass_g": 4,
+      "section": "all",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "XT60_loopkey": {
+      "board": "XT60 гнездо + XT60 loop-key",
+      "size": [
+        16,
+        8,
+        16
+      ],
+      "mass_g": 5,
+      "section": "rear",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    },
+    "Dock_contacts": {
+      "board": "контакты док-станции (резерв места)",
+      "size": [
+        36,
+        36,
+        5
+      ],
+      "mass_g": 0,
+      "section": "rear",
+      "estimate_row": null,
+      "i5_peak_a": 0.0,
+      "i5_avg_a": 0.0,
+      "measure": false,
+      "purchased": false
+    }
+  },
+  "power": {
+    "battery": {
+      "cells": "Molicel P28A",
+      "config": "2S2P",
+      "voltage_nom": 7.2,
+      "capacity_mah": 5600,
+      "cell_cont_a": 25,
+      "pack_cont_a": 50,
+      "bms_a": 40,
+      "fuse_main_a": 40
+    },
+    "ubec_F": {
+      "voltage": 6.0,
+      "current_a": 20,
+      "fuse_a": 25,
+      "loads": "01–06, 16–20"
+    },
+    "ubec_R": {
+      "voltage": 6.0,
+      "current_a": 20,
+      "fuse_a": 25,
+      "loads": "07–15"
+    },
+    "dcdc_logic": {
+      "voltage": 5.0,
+      "current_a": 5,
+      "fuse_a": 5
+    },
+    "ground": "звезда на минусе батареи",
+    "soft_start": "OE PCA9685 подтянут к 3.3 В, ветки включаются MOSFET-ключами по очереди",
+    "purchased": false,
+    "battery_sense": "делитель 100 кОм / 33 кОм → GPIO36 (ADC1) «Тела»; INA226 батареи убран",
+    "dock": "место под два контакта док-станции в дне задней секции (x −40…−19, y −23…−13)"
+  },
+  "can": {
+    "bitrate": 500000,
+    "topology": [
+      "ESP32_Senses",
+      "ESP32_Brain",
+      "ESP32_Comms",
+      "ESP32_Body"
+    ],
+    "terminators_120ohm": [
+      "ESP32_Senses",
+      "ESP32_Body"
+    ],
+    "transceiver": "SN65HVD230 (3.3 В) × 4, у каждой платы; TWAI есть во всех трёх семействах",
+    "neck_cable": "CAN витая пара + 5 В/GND + 6 В/GND, петля на ±90° поворота и наклон",
+    "boards": {
+      "ESP32_Senses": "ESP32-S3",
+      "ESP32_Brain": "ESP32-S3",
+      "ESP32_Comms": "ESP32-C3",
+      "ESP32_Body": "ESP32 (WROOM-32)"
+    }
+  },
+  "knee_linkage": {
+    "r1": 15.0,
+    "r2": 29.0,
+    "beta_deg": 38,
+    "rod_L": 55.0,
+    "servo_u": 0.0,
+    "servo_d": 40.0,
+    "kappa_min": 65,
+    "kappa_max": 130,
+    "ratio_stance": 2.091,
+    "ratio_min_walk": 1.935,
+    "servo_span_deg": 155.5,
+    "toggle_deg": 130.04,
+    "stop_deg": 128.5,
+    "work_max_deg": 128.0
+  },
+  "servo_table": [
+    {
+      "no": 1,
+      "name": "Servo_01_FL_abduction",
+      "joint": "ПЛ отведение",
+      "type": "MG996R",
+      "range": [
+        -30,
+        30
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch0",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 2,
+      "name": "Servo_02_FL_hip",
+      "joint": "ПЛ бедро",
+      "type": "MG996R",
+      "range": [
+        -90,
+        90
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch1",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 3,
+      "name": "Servo_03_FL_knee",
+      "joint": "ПЛ колено (через тягу)",
+      "type": "MG996R",
+      "range": [
+        -128,
+        -65
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch2",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 4,
+      "name": "Servo_04_FR_abduction",
+      "joint": "ПП отведение",
+      "type": "MG996R",
+      "range": [
+        -30,
+        30
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch3",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 5,
+      "name": "Servo_05_FR_hip",
+      "joint": "ПП бедро",
+      "type": "MG996R",
+      "range": [
+        -90,
+        90
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch4",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 6,
+      "name": "Servo_06_FR_knee",
+      "joint": "ПП колено (через тягу)",
+      "type": "MG996R",
+      "range": [
+        -128,
+        -65
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch5",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 7,
+      "name": "Servo_07_BL_abduction",
+      "joint": "ЗЛ отведение",
+      "type": "MG996R",
+      "range": [
+        -30,
+        30
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch6",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 8,
+      "name": "Servo_08_BL_hip",
+      "joint": "ЗЛ бедро",
+      "type": "MG996R",
+      "range": [
+        -90,
+        90
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch7",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 9,
+      "name": "Servo_09_BL_knee",
+      "joint": "ЗЛ колено (через тягу)",
+      "type": "MG996R",
+      "range": [
+        -128,
+        -65
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch8",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 10,
+      "name": "Servo_10_BR_abduction",
+      "joint": "ЗП отведение",
+      "type": "MG996R",
+      "range": [
+        -30,
+        30
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch9",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 11,
+      "name": "Servo_11_BR_hip",
+      "joint": "ЗП бедро",
+      "type": "MG996R",
+      "range": [
+        -90,
+        90
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch10",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 12,
+      "name": "Servo_12_BR_knee",
+      "joint": "ЗП колено (через тягу)",
+      "type": "MG996R",
+      "range": [
+        -128,
+        -65
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch11",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 13,
+      "name": "Servo_13_spine_yaw",
+      "joint": "позвоночник вбок",
+      "type": "MG996R",
+      "range": [
+        -15,
+        15
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch12",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 14,
+      "name": "Servo_14_spine_pitch",
+      "joint": "позвоночник вверх-вниз",
+      "type": "DS3235MG",
+      "range": [
+        -20,
+        20
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch13",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 15,
+      "name": "Servo_15_tail",
+      "joint": "хвост",
+      "type": "SG90",
+      "range": [
+        -60,
+        60
+      ],
+      "board": "ESP32_Body",
+      "channel": "PCA9685 0x40 ch14",
+      "power": "UBEC_R"
+    },
+    {
+      "no": 16,
+      "name": "Servo_16_neck_pitch",
+      "joint": "шея наклон",
+      "type": "MG996R",
+      "range": [
+        -30,
+        45
+      ],
+      "board": "ESP32_Senses",
+      "channel": "GPIO17 (LEDC; GPIO38 занят RGB-светодиодом на DevKitC-1 v1.1)",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 17,
+      "name": "Servo_17_neck_yaw",
+      "joint": "шея поворот",
+      "type": "MG90S",
+      "range": [
+        -90,
+        90
+      ],
+      "board": "ESP32_Senses",
+      "channel": "GPIO39 (LEDC)",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 18,
+      "name": "Servo_18_jaw",
+      "joint": "челюсть",
+      "type": "MG90S",
+      "range": [
+        0,
+        30
+      ],
+      "board": "ESP32_Senses",
+      "channel": "GPIO40 (LEDC)",
+      "power": "UBEC_F через INA226"
+    },
+    {
+      "no": 19,
+      "name": "Servo_19_ear_L",
+      "joint": "ухо левое",
+      "type": "SG90",
+      "range": [
+        -45,
+        45
+      ],
+      "board": "ESP32_Senses",
+      "channel": "GPIO41 (LEDC)",
+      "power": "UBEC_F"
+    },
+    {
+      "no": 20,
+      "name": "Servo_20_ear_R",
+      "joint": "ухо правое",
+      "type": "SG90",
+      "range": [
+        -45,
+        45
+      ],
+      "board": "ESP32_Senses",
+      "channel": "GPIO42 (LEDC)",
+      "power": "UBEC_F"
+    }
+  ],
+  "i2c": {
+    "ESP32_Body": {
+      "pins": "SDA GPIO21 / SCL GPIO22",
+      "freq_hz": 400000,
+      "pullup": "на модулях GY-521 4.7 кОм × 2 + PCA9685 10 кОм ≈ 2 кОм — внешних не нужно",
+      "devices": {
+        "0x40": "PCA9685",
+        "0x68": "MPU-6050 задний (AD0 = 0)",
+        "0x69": "MPU-6050 передний (AD0 = 1), витая пара через позвоночник ≤ 20 см",
+        "0x70": "PCA9685 All-Call (не занимать)"
+      }
+    },
+    "ESP32_Senses": {
+      "pins": "SDA GPIO8 / SCL GPIO9",
+      "freq_hz": 400000,
+      "pullup": "на модуле INA226",
+      "devices": {
+        "0x40": "INA226 — ток сервы челюсти (A0 = A1 = GND)"
+      }
+    }
+  },
+  "knee_spring": {
+    "wire_d_mm": 2.0,
+    "od_mm": 18.0,
+    "turns": 6,
+    "k_nmm_rad": 536.5,
+    "preload_deg_at_65": 25,
+    "min_margin": 2.53,
+    "worst_pose": "рысь, 2 ноги ×1.3"
+  }
+}

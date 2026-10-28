@@ -1,0 +1,124 @@
+=== SCENE units=METRIC/MILLIMETERS scale=1.0 engine=BLENDER_EEVEE camera=None
+objects=87 materials=14 armatures=0 view_layers=['ViewLayer']
+types: {'MESH': 62, 'EMPTY': 25}
+collections: [('Body', 6), ('Electronics', 6), ('Head', 9), ('Leg_FL', 10), ('Leg_FR', 10), ('Leg_RL', 10), ('Leg_RR', 10), ('Rig', 25)]
+
+=== OBJECTS (мировой габарит X×Y×Z, мм)
+Body_end_B               Body         MESH   3.0×104.0×57.5       parent=NeuroPaw_root      polys=6     mats=['PETG_white'] mods=['BEVEL'] cons=[]
+Body_end_F               Body         MESH   3.0×104.0×57.5       parent=NeuroPaw_root      polys=6     mats=['PETG_white'] mods=['BEVEL'] cons=[]
+Body_floor               Body         MESH   260.0×110.0×2.5      parent=NeuroPaw_root      polys=6     mats=['PETG_white'] mods=['BEVEL'] cons=[]
+Body_lid                 Body         MESH   260.0×110.0×2.5      parent=NeuroPaw_root      polys=6     mats=['PETG_white'] mods=['BEVEL'] cons=[]
+Body_wall_L              Body         MESH   260.0×3.0×57.5       parent=NeuroPaw_root      polys=6     mats=['PETG_white'] mods=['BEVEL'] cons=[]
+Body_wall_R              Body         MESH   260.0×3.0×57.5       parent=NeuroPaw_root      polys=6     mats=['PETG_white'] mods=['BEVEL'] cons=[]
+Battery_2S               Electronics  MESH   140.0×45.0×25.0      parent=NeuroPaw_root      polys=6     mats=['Battery'] mods=[] cons=[]
+ESP32_S3                 Electronics  MESH   56.0×28.0×10.0       parent=NeuroPaw_root      polys=6     mats=['PCB_green'] mods=[] cons=[]
+IMU_BNO085               Electronics  MESH   20.0×20.0×5.0        parent=NeuroPaw_root      polys=6     mats=['PCB_blue'] mods=[] cons=[]
+PCA9685                  Electronics  MESH   60.0×25.0×5.0        parent=NeuroPaw_root      polys=6     mats=['PCB_blue'] mods=[] cons=[]
+Standoffs                Electronics  MESH   130.0×61.0×3.0       parent=NeuroPaw_root      polys=272   mats=['Steel'] mods=[] cons=[]
+UBEC_6V                  Electronics  MESH   50.0×30.0×15.0       parent=NeuroPaw_root      polys=6     mats=['Battery'] mods=[] cons=[]
+Camera_IMX219            Head         MESH   17.0×25.0×24.0       parent=NeuroPaw_root      polys=40    mats=['Lens'] mods=[] cons=[]
+Ear_L                    Head         MESH   24.0×13.7×26.6       parent=NeuroPaw_root      polys=6     mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+Ear_R                    Head         MESH   24.0×13.7×26.6       parent=NeuroPaw_root      polys=6     mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+Eyes_GC9A01              Head         MESH   0.8×80.5×32.5        parent=NeuroPaw_root      polys=100   mats=['Eye_display'] mods=[] cons=[]
+Head_face                Head         MESH   2.0×86.0×44.0        parent=NeuroPaw_root      polys=6     mats=['Face_glass'] mods=['BEVEL'] cons=[]
+Head_shell               Head         MESH   65.0×94.0×60.0       parent=NeuroPaw_root      polys=6     mats=['PETG_white'] mods=['BEVEL'] cons=[]
+Muzzle                   Head         MESH   36.0×50.0×24.0       parent=NeuroPaw_root      polys=6     mats=['PETG_white'] mods=['BEVEL'] cons=[]
+Neck_mount               Head         MESH   50.0×40.0×10.0       parent=NeuroPaw_root      polys=6     mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+Nose_VL53L5CX            Head         MESH   3.0×10.0×10.0        parent=NeuroPaw_root      polys=6     mats=['Lens'] mods=[] cons=[]
+FL_foot                  Leg_FL       MESH   19.2×22.0×18.8       parent=FL_knee            polys=512   mats=['TPU_black'] mods=[] cons=[]
+FL_hip_servo             Leg_FL       MESH   19.7×42.9×54.5       parent=FL_shoulder        polys=72    mats=['Servo_black'] mods=[] cons=[]
+FL_knee_horn             Leg_FL       MESH   23.8×7.0×23.6        parent=FL_knee_drive      polys=108   mats=['Nylon_horn'] mods=[] cons=[]
+FL_knee_lever            Leg_FL       MESH   23.3×53.4×23.1       parent=FL_knee            polys=108   mats=['Steel'] mods=[] cons=[]
+FL_knee_servo            Leg_FL       MESH   52.3×42.9×52.6       parent=FL_hip             polys=72    mats=['Servo_black'] mods=[] cons=[]
+FL_rod                   Leg_FL       MESH   55.8×6.6×56.4        parent=FL_rod_root        polys=70    mats=['Steel'] mods=[] cons=['STRETCH_TO']
+FL_shin                  Leg_FL       MESH   87.3×20.0×100.6      parent=FL_knee            polys=74    mats=['PETG_graphite'] mods=['BEVEL'] cons=[]
+FL_shoulder_bracket      Leg_FL       MESH   44.0×68.0×53.0       parent=FL_shoulder        polys=52    mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+FL_shoulder_servo        Leg_FL       MESH   42.9×19.7×54.5       parent=NeuroPaw_root      polys=72    mats=['Servo_black'] mods=[] cons=[]
+FL_thigh                 Leg_FL       MESH   101.3×50.4×102.2     parent=FL_hip             polys=154   mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+FR_foot                  Leg_FR       MESH   19.2×22.0×18.8       parent=FR_knee            polys=512   mats=['TPU_black'] mods=[] cons=[]
+FR_hip_servo             Leg_FR       MESH   19.7×42.9×54.5       parent=FR_shoulder        polys=72    mats=['Servo_black'] mods=[] cons=[]
+FR_knee_horn             Leg_FR       MESH   23.8×7.0×23.6        parent=FR_knee_drive      polys=108   mats=['Nylon_horn'] mods=[] cons=[]
+FR_knee_lever            Leg_FR       MESH   23.3×53.4×23.1       parent=FR_knee            polys=108   mats=['Steel'] mods=[] cons=[]
+FR_knee_servo            Leg_FR       MESH   52.3×42.9×52.6       parent=FR_hip             polys=72    mats=['Servo_black'] mods=[] cons=[]
+FR_rod                   Leg_FR       MESH   55.8×6.6×56.4        parent=FR_rod_root        polys=70    mats=['Steel'] mods=[] cons=['STRETCH_TO']
+FR_shin                  Leg_FR       MESH   87.3×20.0×100.6      parent=FR_knee            polys=74    mats=['PETG_graphite'] mods=['BEVEL'] cons=[]
+FR_shoulder_bracket      Leg_FR       MESH   44.0×68.0×53.0       parent=FR_shoulder        polys=52    mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+FR_shoulder_servo        Leg_FR       MESH   42.9×19.7×54.5       parent=NeuroPaw_root      polys=72    mats=['Servo_black'] mods=[] cons=[]
+FR_thigh                 Leg_FR       MESH   101.3×50.4×102.2     parent=FR_hip             polys=154   mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+RL_foot                  Leg_RL       MESH   19.2×22.0×18.8       parent=RL_knee            polys=512   mats=['TPU_black'] mods=[] cons=[]
+RL_hip_servo             Leg_RL       MESH   19.7×42.9×54.5       parent=RL_shoulder        polys=72    mats=['Servo_black'] mods=[] cons=[]
+RL_knee_horn             Leg_RL       MESH   23.8×7.0×23.6        parent=RL_knee_drive      polys=108   mats=['Nylon_horn'] mods=[] cons=[]
+RL_knee_lever            Leg_RL       MESH   23.3×53.4×23.1       parent=RL_knee            polys=108   mats=['Steel'] mods=[] cons=[]
+RL_knee_servo            Leg_RL       MESH   52.3×42.9×52.6       parent=RL_hip             polys=72    mats=['Servo_black'] mods=[] cons=[]
+RL_rod                   Leg_RL       MESH   55.8×6.6×56.4        parent=RL_rod_root        polys=70    mats=['Steel'] mods=[] cons=['STRETCH_TO']
+RL_shin                  Leg_RL       MESH   87.3×20.0×100.6      parent=RL_knee            polys=74    mats=['PETG_graphite'] mods=['BEVEL'] cons=[]
+RL_shoulder_bracket      Leg_RL       MESH   44.0×68.0×53.0       parent=RL_shoulder        polys=52    mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+RL_shoulder_servo        Leg_RL       MESH   42.9×19.7×54.5       parent=NeuroPaw_root      polys=72    mats=['Servo_black'] mods=[] cons=[]
+RL_thigh                 Leg_RL       MESH   101.3×50.4×102.2     parent=RL_hip             polys=154   mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+RR_foot                  Leg_RR       MESH   19.2×22.0×18.8       parent=RR_knee            polys=512   mats=['TPU_black'] mods=[] cons=[]
+RR_hip_servo             Leg_RR       MESH   19.7×42.9×54.5       parent=RR_shoulder        polys=72    mats=['Servo_black'] mods=[] cons=[]
+RR_knee_horn             Leg_RR       MESH   23.8×7.0×23.6        parent=RR_knee_drive      polys=108   mats=['Nylon_horn'] mods=[] cons=[]
+RR_knee_lever            Leg_RR       MESH   23.3×53.4×23.1       parent=RR_knee            polys=108   mats=['Steel'] mods=[] cons=[]
+RR_knee_servo            Leg_RR       MESH   52.3×42.9×52.6       parent=RR_hip             polys=72    mats=['Servo_black'] mods=[] cons=[]
+RR_rod                   Leg_RR       MESH   55.8×6.6×56.4        parent=RR_rod_root        polys=70    mats=['Steel'] mods=[] cons=['STRETCH_TO']
+RR_shin                  Leg_RR       MESH   87.3×20.0×100.6      parent=RR_knee            polys=74    mats=['PETG_graphite'] mods=['BEVEL'] cons=[]
+RR_shoulder_bracket      Leg_RR       MESH   44.0×68.0×53.0       parent=RR_shoulder        polys=52    mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+RR_shoulder_servo        Leg_RR       MESH   42.9×19.7×54.5       parent=NeuroPaw_root      polys=72    mats=['Servo_black'] mods=[] cons=[]
+RR_thigh                 Leg_RR       MESH   101.3×50.4×102.2     parent=RR_hip             polys=154   mats=['PETG_orange'] mods=['BEVEL'] cons=[]
+FL_hip                   Rig          EMPTY  -                    parent=FL_shoulder        polys=-     mats=[] mods=[] cons=[]
+FL_knee                  Rig          EMPTY  -                    parent=FL_hip             polys=-     mats=[] mods=[] cons=[]
+FL_knee_drive            Rig          EMPTY  -                    parent=FL_hip             polys=-     mats=[] mods=[] cons=['COPY_ROTATION']
+FL_rod_root              Rig          EMPTY  -                    parent=FL_knee_drive      polys=-     mats=[] mods=[] cons=[]
+FL_rod_target            Rig          EMPTY  -                    parent=FL_knee            polys=-     mats=[] mods=[] cons=[]
+FL_shoulder              Rig          EMPTY  -                    parent=NeuroPaw_root      polys=-     mats=[] mods=[] cons=[]
+FR_hip                   Rig          EMPTY  -                    parent=FR_shoulder        polys=-     mats=[] mods=[] cons=[]
+FR_knee                  Rig          EMPTY  -                    parent=FR_hip             polys=-     mats=[] mods=[] cons=[]
+FR_knee_drive            Rig          EMPTY  -                    parent=FR_hip             polys=-     mats=[] mods=[] cons=['COPY_ROTATION']
+FR_rod_root              Rig          EMPTY  -                    parent=FR_knee_drive      polys=-     mats=[] mods=[] cons=[]
+FR_rod_target            Rig          EMPTY  -                    parent=FR_knee            polys=-     mats=[] mods=[] cons=[]
+FR_shoulder              Rig          EMPTY  -                    parent=NeuroPaw_root      polys=-     mats=[] mods=[] cons=[]
+NeuroPaw_root            Rig          EMPTY  -                    parent=-                  polys=-     mats=[] mods=[] cons=[]
+RL_hip                   Rig          EMPTY  -                    parent=RL_shoulder        polys=-     mats=[] mods=[] cons=[]
+RL_knee                  Rig          EMPTY  -                    parent=RL_hip             polys=-     mats=[] mods=[] cons=[]
+RL_knee_drive            Rig          EMPTY  -                    parent=RL_hip             polys=-     mats=[] mods=[] cons=['COPY_ROTATION']
+RL_rod_root              Rig          EMPTY  -                    parent=RL_knee_drive      polys=-     mats=[] mods=[] cons=[]
+RL_rod_target            Rig          EMPTY  -                    parent=RL_knee            polys=-     mats=[] mods=[] cons=[]
+RL_shoulder              Rig          EMPTY  -                    parent=NeuroPaw_root      polys=-     mats=[] mods=[] cons=[]
+RR_hip                   Rig          EMPTY  -                    parent=RR_shoulder        polys=-     mats=[] mods=[] cons=[]
+RR_knee                  Rig          EMPTY  -                    parent=RR_hip             polys=-     mats=[] mods=[] cons=[]
+RR_knee_drive            Rig          EMPTY  -                    parent=RR_hip             polys=-     mats=[] mods=[] cons=['COPY_ROTATION']
+RR_rod_root              Rig          EMPTY  -                    parent=RR_knee_drive      polys=-     mats=[] mods=[] cons=[]
+RR_rod_target            Rig          EMPTY  -                    parent=RR_knee            polys=-     mats=[] mods=[] cons=[]
+RR_shoulder              Rig          EMPTY  -                    parent=NeuroPaw_root      polys=-     mats=[] mods=[] cons=[]
+Floor                    Scene Collection MESH   1200.0×1200.0×2.0    parent=-                  polys=6     mats=['Floor'] mods=[] cons=[]
+
+=== JOINTS (пустышки с ненулевым поворотом)
+FL_hip             rot=[0.0, 44.7, 0.0] limits=[]
+FL_knee            rot=[0.0, -84.8, 0.0] limits=[]
+FR_hip             rot=[0.0, 44.7, 0.0] limits=[]
+FR_knee            rot=[0.0, -84.8, 0.0] limits=[]
+RL_hip             rot=[0.0, 44.7, 0.0] limits=[]
+RL_knee            rot=[0.0, -84.8, 0.0] limits=[]
+RR_hip             rot=[0.0, 44.7, 0.0] limits=[]
+RR_knee            rot=[0.0, -84.8, 0.0] limits=[]
+
+=== ARMATURES
+нет
+
+=== MATERIALS
+Battery          color=(0.15,0.17,0.20) rough=0.60 metal=0.0 users=2
+Eye_display      color=(0.15,0.75,1.00) rough=0.30 metal=0.0 users=1
+Face_glass       color=(0.00,0.00,0.01) rough=0.06 metal=0.0 users=1
+Floor            color=(0.55,0.56,0.58) rough=0.80 metal=0.0 users=1
+Lens             color=(0.02,0.03,0.05) rough=0.05 metal=0.6 users=2
+Nylon_horn       color=(0.90,0.90,0.87) rough=0.60 metal=0.0 users=4
+PCB_blue         color=(0.02,0.07,0.35) rough=0.50 metal=0.0 users=2
+PCB_green        color=(0.02,0.22,0.08) rough=0.50 metal=0.0 users=1
+PETG_graphite    color=(0.06,0.06,0.07) rough=0.45 metal=0.0 users=4
+PETG_orange      color=(0.95,0.33,0.05) rough=0.40 metal=0.0 users=11
+PETG_white       color=(0.85,0.86,0.84) rough=0.42 metal=0.0 users=8
+Servo_black      color=(0.02,0.02,0.02) rough=0.55 metal=0.0 users=12
+Steel            color=(0.75,0.75,0.77) rough=0.28 metal=1.0 users=9
+TPU_black        color=(0.03,0.03,0.03) rough=0.90 metal=0.0 users=4
+
+=== DONE
